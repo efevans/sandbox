@@ -27,7 +27,7 @@ func main() {
 func ReadConfiguration(fileName string) {
 	file, err := os.Open(fileName)
 	if err != nil {
-		log.Fatal("Error opening configuration file")
+		log.Fatal("Error opening configuration file...?")
 	}
 	decoder := json.NewDecoder(file)
 	configuration = Configuration{}
